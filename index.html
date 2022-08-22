@@ -53,12 +53,12 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/m.jpg" alt="image" class="w-full h-xl" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Lionel Messi</h3>
+                                    <h3 class="text-2xl font-bold mb-3" id="messi">Lionel Messi</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         36 Goal . 120 assists
                                     </p>
                                     <!-- working this disable button -->
-                                    <button id="messi"
+                                    <button id="select-messi"
                                         class="dd py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -69,11 +69,11 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/neymar.jpg" alt="image" class="w-full h-xl" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Neymar</h3>
+                                    <h3 class="text-2xl font-bold mb-3 " id="neymar">Neymar</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         30 Goal . 100 assists
                                     </p>
-                                    <button
+                                    <button id="select-neymar"
                                         class="dd py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -84,11 +84,11 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/pedri.jpg" alt="image" class="w-full" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Pedri</h3>
+                                    <h3 class="text-2xl font-bold mb-3" id="pedri">Pedri</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         20 Goal . 100 assists
                                     </p>
-                                    <button
+                                    <button id="select-pedri"
                                         class="py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -101,11 +101,11 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/rnldinho.jpg" alt="image" class="w-full h-xl" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Ronaldinho</h3>
+                                    <h3 class="text-2xl font-bold mb-3" id="ronaldinho">Ronaldinho</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         40 Goal . 110 assists
                                     </p>
-                                    <button
+                                    <button id="select-ronaldinho"
                                         class="py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -116,11 +116,11 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/ronaldo.jpg" alt="image" class="w-full" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Ronaldo</h3>
+                                    <h3 class="text-2xl font-bold mb-3" id="ronaldo">Ronaldo</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         36 Goal . 120 assists
                                     </p>
-                                    <button
+                                    <button id="select-ronaldo"
                                         class="py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -131,11 +131,11 @@
                             <div class="bg-transparent rounded-lg overflow-hidden">
                                 <img src="img/sadio.jpg" alt="image" class="w-full" />
                                 <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                                    <h3 class="text-2xl font-bold mb-3">Sadio Mane</h3>
+                                    <h3 class="text-2xl font-bold mb-3" id="sadio">Sadio Mane</h3>
                                     <p class="text-sm text-slate-400 leading-relaxed mb-7">
                                         39 Goal . 90 assists
                                     </p>
-                                    <button
+                                    <button id="select-sadio"
                                         class="py-2 px-14 rounded-sm bg-sky-600 text-base text-white font-medium hover:border-primary hover:bg-primary hover:text-white transition">
                                         Selected
                                     </button>
@@ -147,14 +147,18 @@
             </div>
 
             <!-- Calculate Div or Js div -->
+
             <div id="calculate-div" class="col-span-1 row-span-5 w-9/12 mx-auto">
                 <section id="js-section">
                     <!-- player show  -->
-                    <h1 class="text-3xl text-center mb-6">Best - Five</h1>
+
+                    <h1 class="text-3xl text-center mb-6" id="best-five">Best - Five</h1>
 
                     <ol id="player-show"></ol>
 
                     <br /><br />
+
+
                     <!-- Budget Div -->
                     <h1 class="text-3xl text-center mb-8">Budget</h1>
 
