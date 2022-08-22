@@ -18,4 +18,12 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 })
 
-
+document.getElementById('calculate-total').addEventListener('click', function () {
+    const expensesTotalSt = document.getElementById('player-expenses').innerText;
+    const expensesTotal = parseFloat(expensesTotalSt);
+    const managerField = converter('manager-field');
+    const coachField = converter('coach-field');
+    const totalAmount = expensesTotal + managerField + coachField;
+    const finalTotal = document.getElementById('final-total');
+    finalTotal.innerText = totalAmount;
+})
