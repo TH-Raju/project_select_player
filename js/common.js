@@ -10,7 +10,9 @@ function addPlayer(selectName, plyerName) {
         const element = document.getElementById('player-show');
         element.appendChild(para);
 
+        document.getElementById(selectName).style.backgroundColor = "rgb(125 211 252)";
         document.getElementById(selectName).disabled = true;
+
 
     })
 }
