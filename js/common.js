@@ -17,6 +17,10 @@ function addPlayer(selectName, plyerName) {
     })
 }
 
+
+
+// function for conver String to float 
+
 function converter(field) {
     const stringNumber = document.getElementById(field).value;
     const floatNumber = parseFloat(stringNumber);
