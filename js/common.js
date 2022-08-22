@@ -15,15 +15,11 @@ function addPlayer(selectName, plyerName) {
     })
 }
 
-
-document.getElementById('calculate').addEventListener('click', function () {
-    const perPlayerIn = document.getElementById('perPlayer-field').value;
-    const perPlayer = parseFloat(perPlayerIn);
-    const expensesTotal = 5 * perPlayer;
-
-    const playerExpenses = document.getElementById('player-expenses');
-    playerExpenses.innerText = expensesTotal;
-    console.log(typeof (perPlayer));
+function converter(field) {
+    const stringNumber = document.getElementById(field).value;
+    const floatNumber = parseFloat(stringNumber);
+    return floatNumber;
+}
 
 
-})
+
