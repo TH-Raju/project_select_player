@@ -11,7 +11,6 @@ document.getElementById('calculate').addEventListener('click', function () {
     const element = document.getElementById('player-show');
     const totalPlayer = element.children.length;
     const expensesTotal = totalPlayer * perPlayer;
-
     const playerExpenses = document.getElementById('player-expenses');
     playerExpenses.innerText = expensesTotal;
 
