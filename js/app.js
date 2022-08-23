@@ -7,7 +7,6 @@ addPlayer('select-sadio', 'sadio');
 
 
 
-
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayer = converter('perPlayer-field');
     const expensesTotal = 5 * perPlayer;
@@ -17,6 +16,9 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 
 })
+
+
+
 
 document.getElementById('calculate-total').addEventListener('click', function () {
     const expensesTotalSt = document.getElementById('player-expenses').innerText;
