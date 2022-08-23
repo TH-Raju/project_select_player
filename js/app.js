@@ -6,10 +6,11 @@ addPlayer('select-ronaldo', 'ronaldo');
 addPlayer('select-sadio', 'sadio');
 
 
-
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayer = converter('perPlayer-field');
-    const expensesTotal = 5 * perPlayer;
+    const element = document.getElementById('player-show');
+    const totalPlayer = element.children.length;
+    const expensesTotal = totalPlayer * perPlayer;
 
     const playerExpenses = document.getElementById('player-expenses');
     playerExpenses.innerText = expensesTotal;
